@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  evi:
+    image: "evolvedpacks/evi:latest"
+    environment:
+      - "XMS=1G"
+      - "XMX=4G"
+    ports:
+      - "25565:25565"
+      - "25575:25575"
+    volumes:
+      - "./evi/world:/var/server/world"
+      - "./evi/server.properties:/var/server/server.properties"
+      - "./evi/white-list.json:/var/server/white-list.json"
+      - "./evi/ops.json:/var/server/ops.json"
+    restart: on-failure
+    labels:
+      apptype: "gameserver"
