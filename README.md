@@ -1,6 +1,6 @@
 # Evolved Infinity Server Docker Image
 
-The Dockerfile in this directory provides a full Docker image to set up aN Evolved Infinity server based on OpenJDK 8 and Alpine Linux as base image.
+The Dockerfile in this directory provides a full Docker image to set up an Evolved Infinity server based on OpenJDK 8 and Alpine Linux as base image.
 
 ## Build the Image
 
