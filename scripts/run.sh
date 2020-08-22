@@ -14,4 +14,4 @@ then
     cat $TMP_PROP_LOC >> $FIN_PROP_LOC
 fi
 
-java -jar -Xms${XMS} -Xmx${XMX} ./forge.jar
+java -jar -Xms${XMS} -Xmx${XMX} ./forge.jar $@
