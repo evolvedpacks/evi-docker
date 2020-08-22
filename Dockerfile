@@ -23,4 +23,4 @@ RUN mv ./config/MoreDefaultOptions/server.properties ./_server.properties
 
 EXPOSE 25565 25575
 
-CMD sh ./run.sh
+ENTRYPOINT ["sh", "./run.sh"]
